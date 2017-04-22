@@ -1,0 +1,631 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/manage.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/manageData.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css">
+</head>
+<body>
+<div class="top">
+    <h1>TEACH IN CHINA 后台管理系统</h1>
+</div>
+<div class="main">
+    <div class="list">
+        <div class="tit"><span class="fa fa-list"></span>菜单列表</div>
+        <a href="javascript:;" style="background:#fff">申请表管理</a>
+        <a href="javascript:;">数据管理</a>
+    </div>
+    <div class="container formContainer">
+        <div class="user">
+            <div class="box">
+                <div class="search">
+                    <input type="text" id="keyword" placeholder="关键字">
+                    <span class="fa fa-search"></span>
+                    <select name="" class="select">
+                        <option value="">全部</option>
+                        <option value="">有申请表</option>
+                        <option value="">无申请表</option>
+                    </select>
+                </div>
+                <div class="table">
+                    <div class="pages">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="th1">编号</th>
+                                    <th class="th2">用户名</th>
+                                    <th class="th3">真实姓名</th>
+                                    <th class="th4">电子邮箱</th>
+                                    <th class="th5"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>smart boy</td>
+                                    <td>clay thompson</td>
+                                    <td>154354653@hotmail.com</td>
+                                    <td><a href="javascript:;" class="blue">申请表</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>smart boy</td>
+                                    <td>clay thompson</td>
+                                    <td>154354653@hotmail.com</td>
+                                    <td><a href="javascript:;" class="blue">申请表</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>smart boy</td>
+                                    <td>clay thompson</td>
+                                    <td>154354653@hotmail.com</td>
+                                    <td><a href="javascript:;" class="blue">申请表</a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>smart boy</td>
+                                    <td>clay thompson</td>
+                                    <td>154354653@hotmail.com</td>
+                                    <td><a href="javascript:;" class="blue">申请表</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>smart boy</td>
+                                    <td>clay thompson</td>
+                                    <td>154354653@hotmail.com</td>
+                                    <td><a href="javascript:;" class="blue">申请表</a></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>smart boy</td>
+                                    <td>clay thompson</td>
+                                    <td>154354653@hotmail.com</td>
+                                    <td><a href="javascript:;" class="blue">申请表</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>smart boy</td>
+                                    <td>clay thompson</td>
+                                    <td>154354653@hotmail.com</td>
+                                    <td><a href="javascript:;" class="blue">申请表</a></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>smart boy</td>
+                                    <td>clay thompson</td>
+                                    <td>154354653@hotmail.com</td>
+                                    <td><a href="javascript:;" class="blue">申请表</a></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>smart boy</td>
+                                    <td>clay thompson</td>
+                                    <td>154354653@hotmail.com</td>
+                                    <td><a href="javascript:;" class="blue">申请表</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>smart boy</td>
+                                    <td>clay thompson</td>
+                                    <td>154354653@hotmail.com</td>
+                                    <td><a href="javascript:;" class="blue">申请表</a></td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                        <div class='forms'>
+                            <div class='table_box'>
+                                <table>
+                                    <tr>
+                                        <td colspan="4" class="fenlei">
+                                            Biological
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td1">
+                                            FirstName
+                                        </td>
+                                        <td class="td2" id="firstName">
+                                        </td>
+                                        <td class="td1">
+                                            MiddleName
+                                        </td>
+                                        <td class="td2" id="middleName">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            LastName
+                                        </td>
+                                        <td id="lastName">
+                                        </td>
+                                        <td>
+                                            Email
+                                        </td>
+                                        <td id="email">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Date of Birth
+                                        </td>
+                                        <td id="birthDate">
+                                        </td>
+                                        <td>
+                                            Gender
+                                        </td>
+                                        <td id="gender">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            所选项目
+                                        </td>
+                                        <td id="program">
+                                        </td>
+                                        <td>
+                                            时间
+                                        </td>
+                                        <td id="time">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Country of Birth
+                                        </td>
+                                        <td id="birthCountry">
+                                        </td>
+                                        <td>
+                                            State of Birth
+                                        </td>
+                                        <td id="birthState">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Ethnicity
+                                        </td>
+                                        <td id="ethnicity">
+                                        </td>
+                                        <td>
+                                            Country of Citizenship
+                                        </td>
+                                        <td id="citizenshipCountry">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fenlei_1" colspan="4">
+                                            Home/Permanent Address
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Street Address
+                                        </td>
+                                        <td id="homeStreet">
+                                        </td>
+                                        <td>
+                                            City
+                                        </td>
+                                        <td id="homeCity">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            State
+                                        </td>
+                                        <td id="homeState">
+                                        </td>
+                                        <td>
+                                            Zip Code
+                                        </td>
+                                        <td id="homeZiCode">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fenlei_1" colspan="4">
+                                            Mailing Address (Please do not use PO Box address)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Street Address
+                                        </td>
+                                        <td id="mailingStreet">
+                                        </td>
+                                        <td>
+                                            City
+                                        </td>
+                                        <td id="mailingCity">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            State
+                                        </td>
+                                        <td id="mailingState">
+                                        </td>
+                                        <td>
+                                            Zip Code
+                                        </td>
+                                        <td id="mailingZipCode">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            E-mail Address
+                                        </td>
+                                        <td colspan="3" id="mailingEmail">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Phone Number
+                                        </td>
+                                        <td id="mailingPhone">
+                                        </td>
+                                        <td>
+                                            Cell Number
+                                        </td>
+                                        <td id="mailingCellNumber">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fenlei_1" colspan="4">
+                                            Emergency Contact
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Name
+                                        </td>
+                                        <td id="emergencyName">
+                                        </td>
+                                        <td>
+                                            Relationship
+                                        </td>
+                                        <td id="emergencyRelationship">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            E-mail
+                                        </td>
+                                        <td id="emergencyEmail">
+                                        </td>
+                                        <td>
+                                            Phone
+                                        </td>
+                                        <td id="emergencyPhone">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="fenlei">
+                                            Background
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="fenlei_1">
+                                            Do you hold any education degrees or teaching certifications?
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="fenlei_1" id="anyDegree">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="fenlei_1">
+                                            Are you certified to teach English as a Second/Foreign Language (TESL/TEFL)?
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="fenlei_1" id="certified">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Current Occupation
+                                        </td>
+                                        <td colspan="3" id="CurrentOccupation">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Employer's Name
+                                        </td>
+                                        <td id="EmployerName">
+                                        </td>
+                                        <td>
+                                            Phone
+                                        </td>
+                                        <td id="EmployerPhone">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Institution's Name
+                                        </td>
+                                        <td id="InstitutionName">
+                                        </td>
+                                        <td>
+                                            Did you graduate from this institution?
+                                        </td>
+                                        <td id="graduateForm">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Dates Attended
+                                        </td>
+                                        <td id="yesDateAttended">
+                                        </td>
+                                        <td>
+                                            Type of Degree or Classification
+                                        </td>
+                                        <td id="yesTypeOfDegree">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Major of Specialization
+                                        </td>
+                                        <td colspan="3" id="yesMajor">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Anticipated Date of Graduation (If any)
+                                        </td>
+                                        <td id="noGraduationDate">
+                                        </td>
+                                        <td>
+                                            Years Completed by Time of Departure
+                                        </td>
+                                        <td id="noyearsCompleted">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            I do not play to graduate
+                                        </td>
+                                        <td colspan="3" id="noPlanGraduate">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Type of Degree or Classification
+                                        </td>
+                                        <td id="noTypeofDegree">
+                                        </td>
+                                        <td>
+                                            Major of Specialization
+                                        </td>
+                                        <td id="noMajor">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="fenlei">
+                                            Passport Information
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 260px;">
+                                        <td>
+                                            Passport(picture)
+                                        </td>
+                                        <td colspan="3" id="pic">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Passport Expiry Date
+                                        </td>
+                                        <td id="passportExpiry">
+                                        </td>
+                                        <td>
+                                            Passport Number
+                                        </td>
+                                        <td id="passportNumber">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Passport Issue Date
+                                        </td>
+                                        <td id="passportIssue">
+                                        </td>
+                                        <td>
+                                            Issuing Country
+                                        </td>
+                                        <td id="issueCountry">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Issuing City
+                                        </td>
+                                        <td colspan="3" id="issueCity">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="fenlei">
+                                            Teaching in China Placement Preferences
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Are you traveling with a friend or partner? Please enter the name(s) here:
+                                        </td>
+                                        <td id="partner">
+                                        </td>
+                                        <td>
+                                            I would rather be placed near
+                                        </td>
+                                        <td id="place">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Please choose your first choice of institution level
+                                        </td>
+                                        <td id="firstChoice">
+                                        </td>
+                                        <td>
+                                            Please choose your second choice of institution level
+                                        </td>
+                                        <td id="secondChoice">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Please choose your third choice of institution level
+                                        </td>
+                                        <td colspan="3" id="thirdChoice">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">
+                                            Other considerations UCE should make in assigning your teaching location (for medical,
+                                            personal, or other important reasons) should be briefly described below.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" id="consideration">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="fenlei">
+                                            References/Recommendations
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" style="font-weight: bold">
+                                            A
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            E-Mail Address
+                                        </td>
+                                        <td colspan="3" id="AEmail">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Daytime Phone Number
+                                        </td>
+                                        <td id="APhone">
+                                        </td>
+                                        <td>
+                                            Salutation/Prefix
+                                        </td>
+                                        <td id="APrefix">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            First Name
+                                        </td>
+                                        <td id="AFirstName">
+                                        </td>
+                                        <td>
+                                            Last Name
+                                        </td>
+                                        <td id="ALastName">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Organization
+                                        </td>
+                                        <td id="AOrganization">
+                                        </td>
+                                        <td>
+                                            Position
+                                        </td>
+                                        <td id="APosition" >
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" style="font-weight: bold">
+                                            B
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            E-Mail Address
+                                        </td>
+                                        <td colspan="3" id="BEmail">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Daytime Phone Number
+                                        </td>
+                                        <td id="BPhone">
+                                        </td>
+                                        <td>
+                                            Salutation/Prefix
+                                        </td>
+                                        <td id="BPrefix">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            First Name
+                                        </td>
+                                        <td id="BFirstName">
+                                        </td>
+                                        <td>
+                                            Last Name
+                                        </td>
+                                        <td id="BLastName">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Organization
+                                        </td>
+                                        <td id="BOrganization">
+                                        </td>
+                                        <td>
+                                            Position
+                                        </td>
+                                        <td id="BPosition" >
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="change_page">
+            <ul>
+                <li class="start_page">首页</li>
+                <li class="previous_page">上一页</li>
+                <li>
+                    <span>第</span>
+                    <input type="text" id="page">
+                    <span>页</span>
+                </li>
+
+                <li class="next_page">下一页</li>
+                <li class="end_page">末页</li>
+                <li><span id="goTo">跳转</span></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="container dataContainer">
+        <div class="box">sdfs</div>
+    </div>
+</div>
+</body>
+</html>
